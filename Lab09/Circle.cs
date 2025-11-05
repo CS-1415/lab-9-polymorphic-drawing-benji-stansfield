@@ -2,11 +2,11 @@ namespace Lab09;
 
 public class Circle : AbstractGraphic2D
 {
-    public int CenterX { get; set; }
-    public int CenterY { get; set; }
-    public int Radius { get; set; }
+    public decimal CenterX { get; set; }
+    public decimal CenterY { get; set; }
+    public decimal Radius { get; set; }
     
-    public Circle(int x, int y, int radius)
+    public Circle(decimal x, decimal y, decimal radius)
     {
         CenterX = x;
         CenterY = y;

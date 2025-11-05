@@ -1,6 +1,6 @@
 ﻿namespace Lab09;
 
-/*public class Program
+public class Program
 {
     static void Main()
     {
@@ -17,4 +17,4 @@
         Console.Clear();
         AbstractGraphic2D.Display(shapes);
     }
-}*/
+}
