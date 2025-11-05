@@ -2,7 +2,8 @@ using NUnit.Framework;
 
 namespace Lab09;
 
-/*public class CircleTests
+// Circle Tests
+public class CircleTests
 {
     Circle circle;
     AbstractGraphic2D shape;
@@ -34,7 +35,7 @@ namespace Lab09;
         Assert.AreEqual(10 + 2, shape.UpperBoundY);
     }
 
-    [Test]
+    /*[Test]
     public void CenterIsIncluded()
     {
         Assert.IsTrue(shape.ContainsPoint(8, 10));
@@ -59,6 +60,8 @@ namespace Lab09;
     }
 }
 
+
+// Rectangle Tests
 public class RectangleTests
 {
     Rectangle rectangle;
@@ -119,4 +122,4 @@ public class RectangleTests
         Assert.IsFalse(shape.ContainsPoint(3, 10 + 0.1m));
         Assert.IsFalse(shape.ContainsPoint(8 + 0.1m, 10));
     }
-}**/
+}*/
