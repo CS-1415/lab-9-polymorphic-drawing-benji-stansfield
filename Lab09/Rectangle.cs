@@ -2,13 +2,27 @@ namespace Lab09;
 
 public class Rectangle : AbstractGraphic2D
 {
-    public override decimal LowerBoundX => -1;
 
-    public override decimal UpperBoundX => -1;
+    public decimal Left { get; set; }
+    public decimal Top { get; set; }
+    public decimal Width { get; set; }
+    public decimal Height { get; set; }
 
-    public override decimal LowerBoundY => -1;
+    public Rectangle(decimal left, decimal top, decimal width, decimal height)
+    {
+        Left = left;
+        Top = top;
+        Width = width;
+        Height = height;
+    }
 
-    public override decimal UpperBoundY => -1;
+    public override decimal LowerBoundX => Left;
+
+    public override decimal UpperBoundX => Left + Width;
+
+    public override decimal LowerBoundY => Top;
+
+    public override decimal UpperBoundY => Top + Height;
 
     public override bool ContainsPoint(decimal x, decimal y)
     {

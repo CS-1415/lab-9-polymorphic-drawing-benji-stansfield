@@ -4,7 +4,14 @@ public class Circle : AbstractGraphic2D
 {
     public int CenterX { get; set; }
     public int CenterY { get; set; }
-    public int Radius{ get; set; }
+    public int Radius { get; set; }
+    
+    public Circle(int x, int y, int radius)
+    {
+        CenterX = x;
+        CenterY = y;
+        Radius = radius;
+    }
     
     public override decimal LowerBoundX => CenterX - Radius;
 
@@ -13,13 +20,6 @@ public class Circle : AbstractGraphic2D
     public override decimal LowerBoundY => CenterY - Radius;
 
     public override decimal UpperBoundY => CenterY + Radius;
-
-    public Circle(int x, int y, int radius)
-    {
-        CenterX = x;
-        CenterY = y;
-        Radius = radius;
-    }
 
     public override bool ContainsPoint(decimal x, decimal y)
     {

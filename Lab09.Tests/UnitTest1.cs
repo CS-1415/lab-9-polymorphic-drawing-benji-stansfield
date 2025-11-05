@@ -1,7 +1,7 @@
 using NUnit.Framework;
 
 namespace Lab09;
-
+/*
 // Circle Tests
 public class CircleTests
 {
@@ -59,8 +59,8 @@ public class CircleTests
         Assert.IsFalse(shape.ContainsPoint(8 + 2, 10 + 2));
     }
 }
+*/
 
-/*
 // Rectangle Tests
 public class RectangleTests
 {
@@ -70,7 +70,10 @@ public class RectangleTests
     [SetUp]
     public void Setup()
     {
+        // should be top, left, width, and height
         rectangle = new Rectangle(3, 4, 5, 6);
+
+        // should extend the abstract class
         shape = rectangle;
     }
 
@@ -98,7 +101,9 @@ public class RectangleTests
         Assert.AreEqual(3 + 5, shape.UpperBoundX);
         Assert.AreEqual(4 + 6, shape.UpperBoundY);
     }
+}
 
+    /*
     [Test]
     public void MiddleOfShapeIsIncluded()
     {
