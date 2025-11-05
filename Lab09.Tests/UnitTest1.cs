@@ -101,9 +101,7 @@ public class RectangleTests
         Assert.AreEqual(3 + 5, shape.UpperBoundX);
         Assert.AreEqual(4 + 6, shape.UpperBoundY);
     }
-}
-
-    /*
+ 
     [Test]
     public void MiddleOfShapeIsIncluded()
     {
@@ -127,4 +125,4 @@ public class RectangleTests
         Assert.IsFalse(shape.ContainsPoint(3, 10 + 0.1m));
         Assert.IsFalse(shape.ContainsPoint(8 + 0.1m, 10));
     }
-}*/
+}
