@@ -35,7 +35,7 @@ public class CircleTests
         Assert.AreEqual(10 + 2, shape.UpperBoundY);
     }
 
-    /*[Test]
+    [Test]
     public void CenterIsIncluded()
     {
         Assert.IsTrue(shape.ContainsPoint(8, 10));
@@ -60,7 +60,7 @@ public class CircleTests
     }
 }
 
-
+/*
 // Rectangle Tests
 public class RectangleTests
 {
