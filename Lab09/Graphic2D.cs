@@ -1,5 +1,13 @@
 ﻿namespace Lab09;
 
+// Represents a graphical element (i.e. a shape) that can be printed to the console.
+public interface IGraphic2D
+{
+    // draws the graphic on the screen; return true if successful
+    bool Display();
+}
+
+
 // Implements the display char and color properties.
 public abstract class AbstractGraphic2D : IGraphic2D
 {
@@ -32,7 +40,7 @@ public abstract class AbstractGraphic2D : IGraphic2D
         }
         if (skippedSome)
         {
-            Console.WriteLine("warning: some cells skipped because  of too small buffer");
+            Console.WriteLine("warning: some cells skipped because of too small buffer");
         }
     }
 
@@ -51,7 +59,7 @@ public abstract class AbstractGraphic2D : IGraphic2D
             {
                 if (ContainsPoint(column, row))
                 {
-                    if (column < Console.BufferWidth && row < Console.BufferHeight)
+                    if (column < Console.BufferWidth && row < Console.BufferHeight) 
                     {
                         Console.SetCursorPosition(column, row);
                         Console.Write(DisplayChar);
@@ -68,14 +76,5 @@ public abstract class AbstractGraphic2D : IGraphic2D
         Console.SetCursorPosition(0, 0);
         return !skippedSome;
     }
-
-}
-
-// Represents a graphical element (i.e. a shape) that can be printed to the console.
-public interface IGraphic2D
-{
-
-    // draws the graphic on the screen; return true if successful
-    bool Display();
 
 }

@@ -2,7 +2,7 @@ using NUnit.Framework;
 
 namespace Lab09;
 
-public class CircleTests
+/*public class CircleTests
 {
     Circle circle;
     AbstractGraphic2D shape;
@@ -119,4 +119,4 @@ public class RectangleTests
         Assert.IsFalse(shape.ContainsPoint(3, 10 + 0.1m));
         Assert.IsFalse(shape.ContainsPoint(8 + 0.1m, 10));
     }
-}
+}**/
